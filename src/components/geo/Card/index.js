@@ -2,10 +2,9 @@ import React from 'react';
 import {PressItem, Image, Name, Artist, More, InfoContainer} from './styles'
 
 
-const Card = ({item}) => {
-  console.log(item)
+const Card = ({item, onPress}) => {
   return (
-    <PressItem>
+    <PressItem onPress={onPress}>
       <Image
         source={{
           uri: item.image[3]['#text'],
